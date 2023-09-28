@@ -100,8 +100,14 @@ color: var(--highlight-color);
 }
 /* Hero Section */
 .hero-section{
-    background-color: var(--bg-color);
+   background-image: linear-gradient(
+    to bottom,
+    var(--description-color),
+    var(--bg-color));
     height: 600px;
+    background-image: url('../images/bgimg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .hero-container{
   display: flex;
@@ -378,7 +384,8 @@ padding-bottom: 94px;
 .project-item-list{
   flex-basis: calc((100% - 90px) / 3);
 }
-.project-item-list:hover{
+.project-item-list:hover,
+.project-item-list:focus{
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
